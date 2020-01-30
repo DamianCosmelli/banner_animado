@@ -1,0 +1,123 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+* {
+    font-family: 'Gotham', sans-serif;
+    
+}
+
+
+.awsome-text-container {
+  	
+    /*border: 1px gray solid;*/
+    width: 14%;
+    height: 20%;
+    /*background-color: aliceblue;*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+  	font-size: 30px;
+  	
+  	margin-left: 590px;
+  	margin-top: -103px;
+  
+    animation: opa 5s;
+    animation-delay: 2s;
+	opacity: 0;
+  
+   
+}
+
+.awsome-text-container2 {
+  	
+  	position: absolute;
+  	width: 283px;
+  	left: 600px;
+  	top: 70px; 
+  	font-size: 22px;  
+    font-weight: bold;
+    animation: opa2 2.5s;
+    animation-delay: 1s;
+	opacity: 0;
+}
+
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes mymove2 {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes opa {
+  0% { opacity: 0,5; }
+  30% { opacity: 0,8; }
+  50% { opacity: 1; }
+  70% { opacity: 1; }
+  90% { opacity: 0,8; }
+  100% { opacity: 0,5; }
+}
+
+@keyframes opa2 {
+  0% { opacity: 0; }
+  30% { opacity: 0,8; }
+  50% { opacity: 1; }
+  70% { opacity: 1; }
+  90% { opacity: 0,8; }
+  100% { opacity: 0; }
+}
+
+.animated-opacity {
+	
+  	display: inline-block;
+    color: #FFFFFF;
+    animation: mymove 5s infinite;
+  	animation-delay: 2s;
+}
+
+.animated-letter {
+    /*animation-duration: 8s;*/
+    /*animation-iteration-count: infinite;*/
+    display: inline-block;
+    /*animation-fill-mode: both;*/
+    color: #FFFFFF;
+    animation: mymove 5s infinite;
+  	animation-delay: 5s;
+}
+
+.animated-letter:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animated-letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.animated-letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.animated-letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.animated-letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.image-container {
+    margin: auto;
+  	width: 383 px;
+    display: table;
+}
+
+.text-container {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
+}
