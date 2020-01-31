@@ -8,34 +8,38 @@
 
 .awsome-text-container {
   	
-  width: 15%;
+  /*width: 15%;
   height: 20%;
+  margin-left: 580px;
+  margin-top: -106px;*/
+  
+  position: absolute;
+  width: 283px;
+  left: 540px;
+  top: 69px;
   align-items: center;
+  font-size: 1.4em; /*1.8em;*/
   font-weight: bold;
-  font-size: 1.8em; /*30px;*/
-  margin-left: 590px;
-  margin-top: -103px;
   animation: opa 5s;
   animation-delay: 3s;
-	opacity: 0;
-  
-   
+  opacity: 0;   
 }
 
 .awsome-text-container2 {
   	
   position: absolute;
   width: 283px;
-  left: 605px;
-  top: 70px; 
-  font-size: 22px;  
+  left: 540px;
+  top: 69px; 
+  align-items: center;
+  font-size: 1.4em;  
   font-weight: bold;
   animation: opa2 2.5s;
-  animation-delay: 1s;
-	opacity: 0;
+  animation-delay: 1.5s;
+  opacity: 0;
 }
 
-@keyframes mymove {
+/*@keyframes mymove {
   from {opacity: 0;}
   to {opacity: 1;}
 }
@@ -43,7 +47,7 @@
 @keyframes mymove2 {
   from {opacity: 1;}
   to {opacity: 0;}
-}
+}*/
 
 @keyframes opa {
   0% { opacity: 0,5; }
@@ -55,11 +59,12 @@
 }
 
 @keyframes opa2 {
-  0% { opacity: 0; }
+  0% { opacity: 0,0; }
+  15% { opacity: 0,5; }
   30% { opacity: 0,8; }
   50% { opacity: 1; }
-  70% { opacity: 1; }
-  90% { opacity: 0,8; }
+  70% { opacity: 0,8; }
+  85% { opacity: 0,5; }
   100% { opacity: 0; }
 }
 
