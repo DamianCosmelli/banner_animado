@@ -1,4 +1,4 @@
 # Banner Animado
 
-Banner animado para apertas con sonido. 
+Banner animado para alertas con sonido. 
 Especial para stream de juegos.
