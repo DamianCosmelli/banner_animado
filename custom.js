@@ -1,28 +1,34 @@
-//get data from the 🤟 StreamElements 🤟 data injection
-const name = 'PEDRO';
+//Mocked values for test
 const amount = '45';
 const animation = 'wobble';
+//const name = '0123456789012345678'; // 19 caracteres
+//const name = '0123456789012345'; // 16 caracteres
+//const name = '01234567890123'; // 14 caracteres
+//const name = '012345678901'; // 12 caracteres
+const name = '0123456789'; //10 caracteres
 
-// vanilla es6 query selection (can use libraries and frameworks too)
+//Get element HTML
 const userNameContainer = document.querySelector('#username-container');
 const amountContainer = document.querySelector('#amount-container');
 
-// change the inner html to animate it 🤪
-userNameContainer.innerHTML = stringToAnimatedHTML(name, animation);
+// change the properties
 amountContainer.innerHTML = stringToAnimatedHTML(amount, animation);
+userNameContainer.innerHTML = stringToAnimatedHTML(name, animation);
+userNameContainer.style.fontSize = renderUserName();
 
-/**
- * return an html, with animation
- * @param s: the text
- * @param anim: the animation to use on the text
- * @returns {string}
- */
+// create span and animate Name user
 function stringToAnimatedHTML(s, anim) {
-    let stringAsArray = s.split('');
-    stringAsArray = stringAsArray.map((letter) => {
-        return `<span class="animated-letter ${anim}">${letter}</span>`
-        
-    });
-    return stringAsArray.join('');
+        return `<span id="username-box" class="animated-letter ${anim}">${s}</span>`
+}
 
+// Render font size in relation for caracter length
+function renderUserName() {
+    
+    if (name.length > 11 && name.length <=12) {
+        return "0.9em";
+    }else if(name.length > 12 && name.length <=15){
+        return "0.7em";
+    } else if(name.length >= 16 && name.length <=19){
+        return "0.6em";
+    }   
 }

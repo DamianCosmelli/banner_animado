@@ -8,22 +8,16 @@
 
 .awsome-text-container {
   	
-    /*border: 1px gray solid;*/
-    width: 14%;
-    height: 20%;
-    /*background-color: aliceblue;*/
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-weight: bold;
-  	font-size: 30px;
-  	
-  	margin-left: 590px;
-  	margin-top: -103px;
-  
-    animation: opa 5s;
-    animation-delay: 2s;
+  width: 15%;
+  height: 20%;
+  text-align: right;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.8em; /*30px;*/
+  margin-left: 590px;
+  margin-top: -103px;
+  animation: opa 5s;
+  animation-delay: 3s;
 	opacity: 0;
   
    
@@ -31,14 +25,14 @@
 
 .awsome-text-container2 {
   	
-  	position: absolute;
-  	width: 283px;
-  	left: 600px;
-  	top: 70px; 
-  	font-size: 22px;  
-    font-weight: bold;
-    animation: opa2 2.5s;
-    animation-delay: 1s;
+  position: absolute;
+  width: 283px;
+  left: 605px;
+  top: 70px; 
+  font-size: 22px;  
+  font-weight: bold;
+  animation: opa2 2.5s;
+  animation-delay: 1s;
 	opacity: 0;
 }
 
@@ -79,45 +73,42 @@
 }
 
 .animated-letter {
-    /*animation-duration: 8s;*/
-    /*animation-iteration-count: infinite;*/
-    display: inline-block;
-    /*animation-fill-mode: both;*/
-    color: #FFFFFF;
-    animation: mymove 5s infinite;
-  	animation-delay: 5s;
+  display: inline-block;
+  color: #FFFFFF;
+  animation: mymove 5s infinite;
+ 	animation-delay: 5s;
 }
 
 .animated-letter:nth-child(1) {
-    animation-delay: 0s;
+  animation-delay: 1s;
 }
 
 .animated-letter:nth-child(2) {
-    animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .animated-letter:nth-child(3) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .animated-letter:nth-child(4) {
-    animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .animated-letter:nth-child(5) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .image-container {
-    margin: auto;
-  	width: 383 px;
-    display: table;
+  margin: auto;
+	width: 383 px;
+  display: table;
 }
 
 .text-container {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    margin: auto;
-    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: auto;
+  text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
 }
